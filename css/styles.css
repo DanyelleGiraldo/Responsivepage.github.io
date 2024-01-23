@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#general {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Para establecer el contexto de bloque para los elementos flotantes */
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+#header1 {
+    float: left;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-right: 1%;
+    height: 10%;
+    width: 45%;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin-left: 2%;
+    text-align: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1);
+}
+
+#header2 {
+    float: right;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-right: 3%;
+    height: 10%;
+    width: 45%;
+    border: 2px solid skyblue;
+    margin-right: 2%;
+    text-align: center;
+    background: linear-gradient(0.25turn, #ebf8e1, #f69d3c);
+    border-radius: 10px;
+
+}
+
+#cuerpo{
+    margin-top: 8%;
+    border: 1px solid lightcoral;
+    overflow: scroll;
+    height: 500px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-bottom: 2%;
+}
+
+#cajadecajas{
+    height: 25%;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 2%;
+    border: 2px solid rgb(153, 236, 236);
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+.caja {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 15px;
+    padding: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease 0s;
+    margin-top: 1%;
+
+}
+
+#cajademinicajitas{
+    height: 25%;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 2%;
+    border: 2px solid rgb(153, 236, 236);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.minicajitas{
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 15px;
+    padding: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease 0s;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    #header1,
+    #header2 {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .caja,
+    .minicajitas {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #header1,
+    #header2 {
+        font-size: 14px;
+    }
+
+    .caja,
+    .minicajitas {
+        font-size: 12px;
+    }
+}
